@@ -1,0 +1,40 @@
+/* From Uiverse.io by mrhyddenn */ 
+.btnnav {
+  background: #fff;
+  border: none;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: skew(-21deg);
+}
+
+.spanbtn {
+  display: inline-block;
+  transform: skew(21deg);
+}
+
+.btnnav::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  background: #ea261d;
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+.btnnav:hover {
+  color: #fff;
+}
+
+.btnnav:hover::before {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}

@@ -1,0 +1,35 @@
+
+  
+
+  .navbar-toggler-icon{fill: white ; background-color: #fff; padding-right: 10px;}
+
+  .responsive-navbar-nav{ background-color: transparent; border: 0 !important; outline:none !important;}
+
+
+  .focus\:outline-none:focus {
+    outline: 0px solid transparent !important;
+    outline-offset: 0px  !important;  
+}
+
+
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none;
+}
+  
+
+.navbar-nav .dropdown-menu {
+  position: static;
+  width: 80%;
+ 
+}
+
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .dropdown-menu {
+    width: 160% !important;  
+
+
+  }
+}

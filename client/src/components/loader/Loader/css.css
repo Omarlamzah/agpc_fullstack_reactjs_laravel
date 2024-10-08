@@ -1,0 +1,49 @@
+/* From Uiverse.io by Cornerstone-04 */
+.loading {
+    width: 50px;
+    height: 50px;
+    position: fixed; /* Changed to fixed to position relative to the viewport */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Offset to exactly center */
+    z-index: 1;
+  }
+  
+  .loading::before, 
+  .loading::after {
+    content: '';
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    mix-blend-mode: multiply;
+    animation: rotate92523 2s infinite cubic-bezier(0.77, 0, 0.175, 1);
+  }
+  
+  .loading::before {
+    background-color: #ea261d;
+  }
+  
+  .loading::after {
+    background-color: #ff8496;
+    animation-delay: 1s;
+  }
+  
+  @keyframes rotate92523 {
+    0%, 100% {
+      left: 35px;
+    }
+  
+    25% {
+      transform: scale(.3);
+    }
+  
+    50% {
+      left: 0%;
+    }
+  
+    75% {
+      transform: scale(1);
+    }
+  }
+  
